@@ -1,0 +1,14 @@
+*.log
+*.pyc
+*.bak
+*.pid
+.project
+.pydevproject
+*.conf
+.settings
+.idea
+run
+dist
+motioneye.egg-info
+dropbox.keys
+.venv
