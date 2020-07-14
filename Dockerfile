@@ -18,7 +18,7 @@ ARG RUN_GID=0
 
 COPY . /tmp/infotecmonitoramento
 
-RUN echo "deb http://snapshot.debian.org/archive/debian/20200630T024205Z sid main contrib non-free" >>/etc/apt/sources.list && \
+RUN echo "deb https://snapshot.debian.org/archive/debian/20200628T204444Z sid main contrib non-free" >>/etc/apt/sources.list && \
     apt-get update && \
     DEBIAN_FRONTEND="noninteractive" apt-get -t stable --yes --option Dpkg::Options::="--force-confnew" --no-install-recommends install \
       curl \
